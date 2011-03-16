@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Mojolicious-Plugin-YamlConfig
-version:            0.1.0
+version:            0.1.1
 abstract:           YAML Configuration Plugin for Mojolicious
 author:
     - Danijel Tasov <data@cpan.org>
@@ -11,7 +11,6 @@ configure_requires:
 build_requires:  {}
 requires:
     Mojolicious:  1.12
-    perl:         5.010
     YAML::Tiny:   0
 resources:
     license:     http://dev.perl.org/licenses/

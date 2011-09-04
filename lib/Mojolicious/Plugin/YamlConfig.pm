@@ -5,7 +5,7 @@ package Mojolicious::Plugin::YamlConfig;
 
 use base 'Mojolicious::Plugin::JSONConfig';
 
-our $VERSION = '0.1.2';
+our $VERSION = '0.1.3';
 
 sub register {
     my ( $self, $app, $conf ) = @_;
@@ -82,7 +82,7 @@ Mojolicious::Plugin::YamlConfig - YAML Configuration Plugin
 
 =head2 DESCRIPTION
 
-Look at L<Mojolicious::Plugin::JsonConfig> and replace "json" with "yaml"
+Look at L<Mojolicious::Plugin::JSONConfig> and replace "JSONConfig" with "yaml_config"
 and you should be fine. :)
 
 =head2 LIMITATIONS

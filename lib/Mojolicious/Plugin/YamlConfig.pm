@@ -5,7 +5,7 @@ package Mojolicious::Plugin::YamlConfig;
 
 use base 'Mojolicious::Plugin::JSONConfig';
 
-our $VERSION = '0.1.5';
+our $VERSION = '0.1.6';
 
 sub register {
     my ( $self, $app, $conf ) = @_;
@@ -96,5 +96,5 @@ Danijel Tasov <data@cpan.org>
 
 =head2 SEE ALSO
 
-L<Mojolicious>, L<Mojolicous::Plugin::JsonConfig>, L<Mojolicious::Guides>
+L<Mojolicious>, L<Mojolicous::Plugin::JSONConfig>, L<Mojolicious::Guides>
 

@@ -5,7 +5,7 @@ package Mojolicious::Plugin::YamlConfig;
 
 use base 'Mojolicious::Plugin::JSONConfig';
 
-our $VERSION = '0.1.6';
+our $VERSION = '0.1.7';
 
 sub register {
     my ( $self, $app, $conf ) = @_;
@@ -31,7 +31,7 @@ sub parse {
     # Render
     $content = $self->render($content, $file, $conf, $app);
 
-    my @broken = qw(YAML YAML::Old);
+    my @broken = qw(YAML YAML::Old YAML::Tiny);
     if (grep { $class eq $_ } @broken) {
         # they are broken *sigh*
         $content = Encode::decode('UTF-8', $content);
@@ -96,5 +96,5 @@ Danijel Tasov <data@cpan.org>
 
 =head2 SEE ALSO
 
-L<Mojolicious>, L<Mojolicous::Plugin::JSONConfig>, L<Mojolicious::Guides>
+L<Mojolicious>, L<Mojolicious::Plugin::JSONConfig>, L<Mojolicious::Guides>
 

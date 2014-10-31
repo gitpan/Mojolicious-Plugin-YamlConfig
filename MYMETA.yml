@@ -17,9 +17,9 @@ no_index:
     - t
     - inc
 requires:
-  Mojolicious: 1.80
+  Mojolicious: 5.54
   YAML::Tiny: 1.60
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/datamuc/Mojolicious-Plugin-YamlConfig
-version: v0.1.8
+version: v0.2.0
